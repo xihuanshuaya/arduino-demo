@@ -49,5 +49,5 @@ void loop() {
   Serial.print(distence/10); //cm
   Serial.println("cm.");
     
-  delay(2000);               // wait for a second
+  delay(2000);               // wait for 2 seconds
 }
