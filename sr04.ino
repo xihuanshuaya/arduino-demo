@@ -21,7 +21,6 @@ void setup() {
 
 // the loop routine runs over and over again forever:
 void loop() {
-  digitalWrite(ledPin, LOW);   // turn the LED on (HIGH is the voltage level)
   
   digitalWrite(triggerPin,LOW);  
   delayMicroseconds(50);
@@ -47,7 +46,7 @@ void loop() {
   
   float distence = (time * speedMMPerUS ) / 2; //mm
   Serial.print(distence/10); //cm
-  Serial.println("cm.");
-    
+  Serial.println("cm");
+  digitalWrite(ledPin, LOW);   // turn the LED on
   delay(2000);               // wait for 2 seconds
 }
